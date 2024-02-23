@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}About{% endblock %} 
+{% block content%}
+
+<h1 align = "center">About</h1>
+<p align = "center">
+  This Notes website is a prototype website created by Pranav Sambhu. More will be slowly be added. 
+</p>
+
+<form method = "POST">
+  <div class="form-group">
+    <label for="feedback">Feedback</label>
+    <textarea placeholder="Put your feedback or suggestions here" name="feedback" id="feedback" class="form-control"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    <select class="form-control" name="rating" id="rating">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
+  <br />
+
+  <button type="submit" class="btn btn-primary">Submit Suggestion</button>
+</form>
+{% endblock %}
